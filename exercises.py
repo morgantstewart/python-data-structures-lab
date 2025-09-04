@@ -43,10 +43,8 @@ print('Exercise 1:', manage_students())
 
 def combine_foods():
     # Create a tuple named foods containing the same number of foods as there are names in the students list
-    foods = ('noodles', 'sushi', 'steak', 'gnocci')
-        
+    foods = ('noodles', 'sushi', 'steak', 'gnocci') 
     meal = ''
-    
     for food in foods:
         meal += food
     
@@ -56,3 +54,17 @@ def combine_foods():
 print('Exercise 2:', combine_foods())
 
 
+
+# Exercise 3: Slicing Tuples
+#
+# Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
+
+def slice_foods():
+    foods = ('noodles', 'sushi', 'steak', 'gnocci')
+    
+    last_two_foods = foods[-2:]
+    
+    return last_two_foods
+
+# Call the function and print the result
+print('Exercise 3:', slice_foods())
